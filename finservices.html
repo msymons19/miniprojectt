@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Services</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .button-group {
+            margin-bottom: 15px;
+        }
+
+        .button-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .button-group button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin-top: 15px;
+            color: #333;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BANKNET</h1>
+        <h2>Select a Service</h2>
+        <div class="button-group">
+            <form action="Deposit.html" method="get">
+                <button type="submit">Deposit</button>
+            </form>
+            <form action="Withdrawal.html" method="get">
+                <button type="submit">Withdrawal</button>
+            </form>
+            <form action="smt.html" method="get">
+                <button type="submit">Internal Money Transfer</button>
+            </form>
+            <form action="imt.html" method="get">
+                <button type="submit">External Money Transfer</button>
+            </form>
+            <form action="utp.html" method="get">
+                <button type="submit">Utility Bill Payment</button>
+            </form>
+        </div>
+        <p><a href="index.html">Back to Home</a></p>
+    </div>
+</body>
+</html>

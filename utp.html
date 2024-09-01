@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Payment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BANKNET</h1>
+        <h2>Utility Payment</h2>
+        <form action="confirm.html" method="get">
+            <div class="form-group">
+                <label for="utility">Utility:</label>
+                <input type="text" id="utility" name="utility" required>
+            </div>
+            <div class="form-group">
+                <label for="accountname">User Account Name:</label>
+                <input type="text" id="accountname" name="accountname" required>
+            </div>
+            <div class="form-group">
+                <label for="accountnumber">User Account Number:</label>
+                <input type="text" id="accountnumber" name="accountnumber" required>
+            </div>
+            <div class="form-group">
+                <label for="idcardnumber">Identification Card Number:</label>
+                <input type="text" id="idcardnumber" name="idcardnumber" required>
+            </div>
+            <div class="form-group">
+                <label for="pin">User Pin:</label>
+                <input type="password" id="pin" name="pin" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmpin">Confirm Pin:</label>
+                <input type="password" id="confirmpin" name="confirmpin" required>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
